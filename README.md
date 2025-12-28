@@ -1,4 +1,31 @@
 # RAG-Q&A-Chat-History
+## About This
+This is a Conversational Retrieval-Augmented Generation (RAG) application that allows users to have intelligent, context-aware conversations with their PDF documents while maintaining chat history across sessions.
+Key Features
+## PDF Document Processing
+
+Upload multiple PDF files simultaneously
+Automatic text extraction and processing
+Documents are split into manageable chunks (5000 chars with 500 overlap)
+Creates vector embeddings for semantic search
+
+## Chat History Management
+
+Session-based conversations: Each session ID maintains its own conversation thread
+Context awareness: The system understands follow-up questions by referencing previous messages
+Persistent memory: Chat history is stored per session, allowing you to continue conversations
+
+## Intelligent Question Reformulation
+The system has two-stage processing:
+
+Stage 1: Reformulates vague or context-dependent questions into standalone queries
+
+Example: "What about the second point?" → "What is the second key finding about climate change mentioned in the document?"
+
+
+Stage 2: Retrieves relevant content and generates concise answers (max 3 sentences)
+
+
 
 ## Run Commands
 ### Setup Python Virtual Env with 3.11.x
