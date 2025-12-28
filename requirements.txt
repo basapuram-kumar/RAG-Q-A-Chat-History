@@ -1,0 +1,12 @@
+langchain-openai
+langchain
+python-dotenv
+langchain-community
+langchain-core
+streamlit
+langchain_classic
+chroma
+langchain_groq
+langchain_chroma
+langchain_huggingface
+sentence-transformers
